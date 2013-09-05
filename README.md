@@ -1,4 +1,1 @@
-bibliography
-============
-
-My BibTeX Bibliography
+(My BibTeX Bibliography)
