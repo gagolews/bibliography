@@ -1,4 +1,4 @@
-# (C) 2013, Marek Gagolewski, http://gagolewski.rexamine.com
+# (C) 2013-2014, Marek Gagolewski, http://gagolewski.rexamine.com
 
 #####################################################################
 

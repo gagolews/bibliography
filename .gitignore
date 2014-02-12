@@ -1,3 +1,5 @@
+.Rhistory
+.RData
 *.acn
 *.acr
 *.alg
