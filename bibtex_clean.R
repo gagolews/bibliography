@@ -4,7 +4,7 @@
 
 bibtex_clean <- function(fin, fout=paste(fin, "out", sep="."), ident="   ")
 {
-   library('stringi') # source('http://stringi.rexamine.com/install.R')
+   library('stringi')
    
    f <- stri_trim(stri_read_lines(fin))
    s1 <- which(stri_detect_regex(f, "^@"))
