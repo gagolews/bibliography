@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript --vanilla
+
 # (C) 2013-2014, Marek Gagolewski, http://gagolewski.rexamine.com
 
 #####################################################################
