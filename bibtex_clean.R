@@ -30,7 +30,6 @@ bibtex_clean <- function(fin, fout=paste(fin, "out", sep="."), ident="   ")
       cat(f[s1[i]], "\n", sep="", file=g)
       contents <- f[(s1[i]+1):(s2[i]-1)]
 #       contents <- stri_replace_first_regex(contents, '^([a-z]+)[ ]*=[ ]*["{](.*)["}](,?)$', "$1 = {$2}$3")
-#       contents <- stri_replace_first_regex(contents, '^([a-z]+)[ ]*=[ ]*\\{\\{(.*)\\}\\}(,?)$', "$1 = {$2}$3")
       cat(stri_paste(ident, contents), sep="\n", file=g)
       cat(f[s2[i]], "\n", sep="", file=g)
       cat("\n", file=g)
