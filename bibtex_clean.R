@@ -1,6 +1,6 @@
 #!/usr/bin/Rscript --vanilla
 
-# (C) 2013-2014, Marek Gagolewski, http://gagolewski.rexamine.com
+# (C) 2013-2016, Marek Gagolewski, http://gagolewski.rexamine.com
 
 #####################################################################
 
@@ -25,16 +25,16 @@ bibtex_clean <- function(fin, fout=paste(fin, "out", sep="."), ident="   ")
    s1 <- s1[o]
    s2 <- s2[o]
 
-#    g <- file(fout, open="w")
-#    for (i in seq_along(s1)) {
-#       cat(f[s1[i]], "\n", sep="", file=g)
-#       contents <- f[(s1[i]+1):(s2[i]-1)]
-# #       contents <- stri_replace_first_regex(contents, '^([a-z]+)[ ]*=[ ]*["{](.*)["}](,?)$', "$1 = {$2}$3")
-#       cat(stri_paste(ident, contents), sep="\n", file=g)
-#       cat(f[s2[i]], "\n", sep="", file=g)
-#       cat("\n", file=g)
-#    }
-#    close(g)
+   g <- file(fout, open="w")
+   for (i in seq_along(s1)) {
+      cat(f[s1[i]], "\n", sep="", file=g)
+      contents <- f[(s1[i]+1):(s2[i]-1)]
+#       contents <- stri_replace_first_regex(contents, '^([a-z]+)[ ]*=[ ]*["{](.*)["}](,?)$', "$1 = {$2}$3")
+      cat(stri_paste(ident, contents), sep="\n", file=g)
+      cat(f[s2[i]], "\n", sep="", file=g)
+      cat("\n", file=g)
+   }
+   close(g)
 
    stri_match_first_regex(f, '^title[ ]*=[ ]*["{](.*)["}],?$')[,2]
 }
