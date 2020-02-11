@@ -1,11 +1,67 @@
+@article{CenaGagolewski2020:genieowa,
+    author = {Anna Cena and Marek Gagolewski},
+    title = {{Genie+OWA}: {R}obustifying hierarchical clustering with {OWA}-based linkages},
+    journal = {Information Sciences},
+    year = {2020},
+    doi = {10.1016/j.ins.2020.02.025},
+    note = {in press},
+    abstract = {We investigate the application of the Ordered Weighted
+        Averaging (OWA) data fusion operator in agglomerative hierarchical
+        clustering. The examined setting generalises the well-known single,
+        complete and average linkage schemes. It allows to embody expert
+        knowledge in the cluster merge process and to provide a much wider
+        range of possible linkages. We analyse various families of weighting
+        functions on numerous benchmark data sets in order to assess their
+        influence on the resulting cluster structure. Moreover, we inspect
+        the correction for the inequality of cluster size distribution --
+        similar to the one in the Genie algorithm. Our results demonstrate
+        that by robustifying the procedure with the Genie correction,
+        we can obtain a significant performance boost in terms of clustering
+        quality. This is particularly beneficial in the case of the linkages
+        based on the closest distances between clusters, including the single
+        linkage and its "smoothed" counterparts. To explain this behaviour,
+        we propose a new linkage process called three-stage OWA which yields
+        further improvements. This way we confirm the intuition that
+        hierarchical cluster analysis should rather take into account
+        a few nearest neighbours of each point, instead of trying to adapt
+        to their non-local neighbourhood.
+    },
+    keywords = {hierarchical clustering; OWA; data fusion; aggregation; Genie}
+}
+
 
 @article{CoroianuETAL2019:owacomonotone,
     author = {Lucian Coroianu and Robert Fullér and Marek Gagolewski and Simon James},
-    title = {Constrained Ordered Weighted averaging aggregation with multiple comonotone constraints},
+    title = {Constrained ordered weighted averaging aggregation with multiple comonotone constraints},
     journal = {Fuzzy Sets and Systems},
     year = {2019},
     doi = {10.1016/j.fss.2019.09.006},
-    note = {in press}
+    note = {in press},
+    abstract = {The constrained ordered weighted averaging (OWA) aggregation
+        problem arises when we aim to maximize or minimize a convex combination
+        of order statistics under linear inequality constraints that act on
+        the variables with respect to their original sources. The standalone
+        approach to optimizing the OWA under constraints is to consider all
+        permutations of the inputs, which becomes quickly infeasible when
+        there are more than a few variables, however in certain cases we can
+        take advantage of the relationships amongst the constraints and
+        the corresponding solution structures. For example, we can consider
+        a land-use allocation satisfaction problem with an auxiliary aim of
+        balancing land-types, whereby the response curves for each species
+        are non-decreasing with respect to the land-types. This results in
+        comonotone constraints, which allow us to drastically reduce
+        the complexity of the problem.
+
+        In this paper, we show that if we have an arbitrary number of
+        constraints that are comonotone (i.e., they share the same ordering
+        permutation of the coefficients), then the optimal solution occurs
+        for decreasing components of the solution. After investigating the
+        form of the solution in some special cases and providing theoretical
+        results that shed light on the form of the solution, we detail
+        practical approaches to solving and give real-world examples.
+    },
+    keywords = {Multiple criteria evaluation; Ordered weighted averaging;
+        Constrained OWA aggregation; Ecology; Work allocation}
 }
 
 
@@ -15,8 +71,29 @@
     year = {2019},
     journal = {IEEE Transactions on Fuzzy Systems},
     doi = {10.1109/TFUZZ.2019.2908135},
-    note = {in press}
+    note = {in press},
+    abstract = {In the field of information fusion, the problem of data
+        aggregation has been formalized as an order-preserving process that
+        builds upon the property of monotonicity. However, fields such as
+        computational statistics, data analysis and geometry, usually emphasize
+        the role of equivariances to various geometrical transformations in
+        aggregation processes. Admittedly, if we consider a unidimensional
+        data fusion task, both requirements are often compatible with each
+        other. Nevertheless, in this paper we show that, in the
+        multidimensional setting, the only idempotent functions that are
+        monotone and orthogonal equivariant are the over-simplistic weighted
+        centroids. Even more, this result still holds after replacing
+        monotonicity and orthogonal equivariance by the weaker property of
+        orthomonotonicity. This implies that the aforementioned approaches
+        to the aggregation of multidimensional data are irreconcilable,
+        and that, if a weighted centroid is to be avoided, we must choose
+        between monotonicity and a desirable behaviour with regard to
+        orthogonal transformations.
+    },
+    keywords = {Multidimensional data aggregation; Monotonicity;
+        Orthogonal equivariance; Centroid}
 }
+
 
 @article{GerasETAL2020:dislike,
     author = {Agnieszka Geras and Grzegorz Siudem and Marek Gagolewski},
@@ -40,6 +117,7 @@
     number = {19},
     pages = {9491--9505}
 }
+
 
 @article{BeliakovGagolewskiJames2019:SugenoRobustGeneral,
     author = {Gleb Beliakov and Marek Gagolewski and Simon James},
@@ -75,6 +153,7 @@
    isbn = {978-3-030-19493-2}
 }
 
+
 @article{PerezDeBaetsGagolewski2019:taxonomy,
     author = {Raúl Pérez-Fernández and Bernard De~Baets and Marek Gagolewski},
     title = {A taxonomy of monotonicity properties for the aggregation of multidimensional data},
@@ -84,6 +163,7 @@
     pages = {322--334},
     doi = {10.1016/j.inffus.2019.05.006}
 }
+
 
 @incollection{CoroianuGagolewski2019:penaltyvector,
     author = {Lucian Coroianu and Marek Gagolewski},
@@ -110,6 +190,7 @@
     doi = {10.1109/TFUZZ.2019.2895565}
 }
 
+
 @article{LasekGagolewski2018:leagues,
     author = {Jan Lasek and Marek Gagolewski},
     title = {The efficacy of league formats in ranking teams},
@@ -121,6 +202,7 @@
     doi = {10.1177/1471082X18798426}
 }
 
+
 @article{BeliakovETAL2019:traffic,
    author = {Gleb Beliakov and Marek Gagolewski and Simon James and Shannon Pace and Nicola Pastorello and Elodie Thilliez and Rajesh Vasa},
    title = {Measuring traffic congestion: {A}n approach based on learning weighted inequality, spread and aggregation indices from comparison data},
@@ -128,17 +210,18 @@
    volume = {67},
    pages = {910--919},
    year = {2019},
-   note = {doi:10.1016/j.asoc.2017.07.014}
+   note = {10.1016/j.asoc.2017.07.014}
 }
+
 
 @incollection{BeliakovETAL2018:lmslts,
     author = {Gleb Beliakov and Marek Gagolewski and Simon James},
-    editor="Jes{\'u}s Medina and others",
-    title="Least Median of Squares ({LMS}) and Least Trimmed Squares ({LTS}) Fitting for the Weighted Arithmetic Mean",
-    booktitle="Information Processing and Management of Uncertainty in Knowledge-Based Systems. Theory and Foundations",
-    year="2018",
-    publisher="Springer",
-    pages="367--378"
+    editor = {Jes{\'u}s Medina and others},
+    title = {Least Median of Squares ({LMS}) and Least Trimmed Squares ({LTS}) Fitting for the Weighted Arithmetic Mean},
+    booktitle = {Information Processing and Management of Uncertainty in Knowledge-Based Systems. Theory and Foundations},
+    year = {2018},
+    publisher = {Springer},
+    pages = {367--378}
 }
 
 @incollection{BartoszukGagolewski2017:binagopplagiarism,
@@ -412,12 +495,6 @@
    year = {2014}
 }
 
-@manual{Gagolewski:CITANpackage,
-   author = {Marek Gagolewski},
-   title = {{\texttt{CITAN}}: {CITation ANalysis} toolpack},
-   note = {{h}ttp://CRAN.R-project.org/package=CITAN},
-   year = {2014}
-}
 
 @article{Gagolewski2009:remarklimithg,
    author = {Marek Gagolewski},
@@ -441,7 +518,10 @@
 
 @phdthesis{Gagolewski2011:PhD,
    author = {Marek Gagolewski},
-   title = {Aggregation operators and their application in a formal model for quality evaluation system of scientific research (Wybrane operatory agregacji i~ich zastosowanie w~modelu formalnym systemu jakości w~nauce)},
+   title = {Aggregation operators and their application in a formal model for
+    quality evaluation system of scientific research
+    (Wybrane operatory agregacji i~ich zastosowanie w~modelu formalnym
+    systemu jakości w~nauce)},
    school = {Systems Research Institute, Polish Academy of Sciences},
    year = {2011},
    note = {(In Polish)}
@@ -552,20 +632,6 @@
    volume = {241},
    number = {2},
    pages = {469--477}
-}
-
-@manual{GagolewskiCaha:fuzzynumberspackage,
-   author = {Marek Gagolewski and Jan Caha},
-   title = {\texttt{FuzzyNumbers}: {T}ools to deal with fuzzy numbers in {R}},
-   note = {{h}ttp://cran.r-project.org/package=FuzzyNumbers},
-   year = {2019}
-}
-
-@manual{GagolewskiCena:agoppackage,
-   author = {Marek Gagolewski and Anna Cena},
-   note = {{h}ttp://cran.r-project.org/package=agop},
-   title = {\texttt{agop}: {A}ggregation operators and preordered sets in {R}},
-   year = {2019}
 }
 
 @incollection{GagolewskiDebskiNowakiewicz2013:effalgorithm,
@@ -706,12 +772,6 @@
    year = {2014}
 }
 
-@Manual{Gagolewski:stringipackage,
-   title = {{R} package stringi: {C}haracter string processing facilities},
-   author = {Marek Gagolewski},
-   year = {2019},
-   note = {{h}ttp://cran.r-project.org/package=stringi}
-}
 
 @book{GrzegorzewskiETAL2014:wnioskowaniestatystyczne,
    author = {Przemys{\l}aw Grzegorzewski and Marek Gagolewski and Konstancja Bobecka-Wesołowska},
@@ -724,7 +784,8 @@
 }
 
 @book{GrzegorzewskiETAL2015:smps2014,
-   author = {Przemys{\l}aw Grzegorzewski and Marek Gagolewski and Olgierd Hryniewicz and Maria \'{A}ngeles Gil},
+   author = {Przemys{\l}aw Grzegorzewski and Marek Gagolewski
+    and Olgierd Hryniewicz and Maria \'{A}ngeles Gil},
    title = {Strengthening Links Between Data Analysis and Soft Computing},
    publisher = {Springer},
    series = {Advances in Intelligent Systems and Computing},
@@ -735,7 +796,9 @@
 }
 
 @book{FerraroETAL2017:smps2016,
-   author = {Maria Brigida Ferraro and Paulo Giordani and Barbara Vantaggi and Marek Gagolewski and Maria \'{A}ngeles Gil and Przemys{\l}aw Grzegorzewski and Olgierd Hryniewicz},
+   author = {Maria Brigida Ferraro and Paulo Giordani and Barbara Vantaggi
+    and Marek Gagolewski and Maria \'{A}ngeles Gil
+    and Przemys{\l}aw Grzegorzewski and Olgierd Hryniewicz},
    title = {Soft Methods for Data Science},
    publisher = {Springer},
    series = {Advances in Intelligent Systems and Computing},
@@ -763,4 +826,33 @@
    publisher = {IEEE},
    pages = {375--380},
    doi = {10.15439/2015F418}
+}
+
+
+@manual{GagolewskiCaha:fuzzynumberspackage,
+   author = {Marek Gagolewski and Jan Caha},
+   title = {\texttt{FuzzyNumbers}: {T}ools to deal with fuzzy numbers in {R}},
+   note = {{h}ttp://cran.r-project.org/package=FuzzyNumbers},
+   year = {2020}
+}
+
+@manual{GagolewskiCena:agoppackage,
+   author = {Marek Gagolewski and Anna Cena},
+   note = {{h}ttp://cran.r-project.org/package=agop},
+   title = {\texttt{agop}: {A}ggregation operators and preordered sets in {R}},
+   year = {2020}
+}
+
+@manual{Gagolewski:stringipackage,
+   title = {{R} package stringi: {C}haracter string processing facilities},
+   author = {Marek Gagolewski and others},
+   year = {2020},
+   note = {{h}ttp://cran.r-project.org/package=stringi}
+}
+
+@manual{Gagolewski:CITANpackage,
+   author = {Marek Gagolewski},
+   title = {{\texttt{CITAN}}: {CITation ANalysis} toolpack},
+   note = {{h}ttp://CRAN.R-project.org/package=CITAN},
+   year = {2020}
 }
