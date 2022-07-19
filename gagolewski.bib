@@ -13,6 +13,30 @@
         data cleansing; missing values; outliers}
 }
 
+@book{Gagolewski2021:lmlcr,
+    author = {Marek Gagolewski},
+    doi = {10.5281/zenodo.3679976},
+    note = {v0.2.3},
+    year = {2022},
+    title = {Lightweight Machine Learning Classics with R},
+    url = {https://lmlcr.gagolewski.com/},
+    publisher = {open-access lecture notes},
+    abstract = {
+        Explore some of the most fundamental algorithms which have stood the
+        test of time and provide the basis for innovative solutions in
+        data-driven AI. Learn how to use the R language for implementing
+        various stages of data processing and modelling activities.
+        Appreciate mathematics as the universal language for formalising
+        data-intense problems and communicating their solutions.
+        The book is for you if you're yet to be fluent with university-level
+        linear algebra, calculus and probability theory or you've forgotten
+        all the maths you've ever learned, and are seeking a gentle,
+        albeit thorough, introduction to the topic.
+    },
+    keywords = {machine learning; classification; regression; clustering;
+        recommender systems; optimisation; R}
+}
+
 @article{BeliakovGagolewskiJames2022:antibuoyant,
     author = {Gleb Beliakov and Marek Gagolewski and Simon James},
     title = {Reduction of variables and constraints in fitting antibuoyant fuzzy measures to data using linear programming},
@@ -90,7 +114,8 @@
         predicted as functions of other ones, and what implications to the
         research evaluation practice our findings have.},
     keywords = {3DSI model; h-index; g-index; w-index;
-        equivalence of bibliometric indices}
+        equivalence of bibliometric indices},
+    preprint = {https://raw.githubusercontent.com/gagolews/bibliography/master/preprints/2022ockham.pdf}
 }
 
 @article{CenaETAL2022:validcit,
@@ -115,7 +140,8 @@
         can be predicted with high accuracy and which are more difficult to
         model.},
     keywords = {science of science; bibliometric indices; scientometrics;
-        citation models; power law}
+        citation models; power law},
+    preprint = {https://raw.githubusercontent.com/gagolews/bibliography/master/preprints/2022validcit.pdf}
 }
 
 @article{Gagolewski2022:stringi,
@@ -169,7 +195,8 @@
         the Möbius representation lets us identify a number of relationships
         between the overall fuzzy measure and the data pipeline structure.
         Included in our findings are simplified fuzzy measures that generalise
-        both k-intolerant and k-interactive capacities.}
+        both k-intolerant and k-interactive capacities.},
+    preprint = {https://raw.githubusercontent.com/gagolews/bibliography/master/preprints/2022mobius.pdf}
 }
 
 @article{GagolewskiBartoszukCena2021:cvi,
@@ -229,34 +256,11 @@
         functions fitted to training data provide a good balance between
         the two. Also, we find that program dependence graph-based methods
         tend to outperform those relying on normalised source code text,
-        tokens, and names of functions invoked.}
+        tokens, and names of functions invoked.},
+    preprint = {https://raw.githubusercontent.com/gagolews/bibliography/master/preprints/2021tnormsimilar.pdf}
 }
 
-@book{Gagolewski2021:lmlcr,
-    author = {Marek Gagolewski},
-    doi = {10.5281/zenodo.3679976},
-    note = {v0.2.3},
-    year = {2022},
-    title = {Lightweight Machine Learning Classics with R},
-    url = {https://lmlcr.gagolewski.com/},
-    publisher = {open-access lecture notes},
-    abstract = {
-        Explore some of the most fundamental algorithms which have stood the
-        test of time and provide the basis for innovative solutions in
-        data-driven AI. Learn how to use the R language for implementing
-        various stages of data processing and modelling activities.
-        Appreciate mathematics as the universal language for formalising
-        data-intense problems and communicating their solutions.
-        The book is for you if you're yet to be fluent with university-level
-        linear algebra, calculus and probability theory or you've forgotten
-        all the maths you've ever learned, and are seeking a gentle,
-        albeit thorough, introduction to the topic.
-    },
-    keywords = {machine learning; classification; regression; clustering;
-        recommender systems; optimisation; R}
-}
-
-@article{LasekGagolewski2020:ratinggd,
+@article{LasekGagolewski2021:iteratings,
     title = {Interpretable sports team rating models based on the gradient descent algorithm},
     author = {Jan Lasek and Marek Gagolewski},
     journal = {International Journal of Forecasting},
@@ -337,7 +341,8 @@
         The weighted centroid is proved to fit within this definition and
         discussed to be linked to a very tangible interpretation. Other
         functions for the aggregation of compositional data are presented
-        and their fit within the proposed definition is discussed.}
+        and their fit within the proposed definition is discussed.},
+    preprint = {https://raw.githubusercontent.com/gagolews/bibliography/master/preprints/2021compositional.pdf}
 }
 
 @article{BeliakovGagolewskiJames2020:dcsugeno,
@@ -364,7 +369,8 @@
     number = {12},
     title = {{DC} optimization for constructing discrete {S}ugeno integrals and learning nonadditive measures},
     year = {2020},
-    pages = {2515--2534}
+    pages = {2515--2534},
+    preprint = {https://raw.githubusercontent.com/gagolews/bibliography/master/preprints/2020dcsugeno.pdf}
 }
 
 @article{BartoszukGagolewski2020:similar,
@@ -536,7 +542,26 @@
     volume = {514},
     year = {2020},
     keywords = {Sugeno integral; fuzzy measure; parameter learning; aggregation functions},
-    abstract = {The Sugeno integral is an expressive aggregation function with potential applications across a range of decision contexts. Its calculation requires only the lattice minimum and maximum operations, making it particularly suited to ordinal data and robust to scale transformations. However, for practical use in data analysis and prediction, we require efficient methods for learning the associated fuzzy measure. While such methods are well developed for the Choquet integral, the fitting problem is more difficult for the Sugeno integral because it is not amenable to being expressed as a linear combination of weights, and more generally due to plateaus and non-differentiability in the objective function. Previous research has hence focused on heuristic approaches or simplified fuzzy measures. Here we show that the problem of fitting the Sugeno integral to data such that the maximum absolute error is minimized can be solved using an efficient bilevel program. This method can be incorporated into algorithms that learn fuzzy measures with the aim of minimizing the median residual. This equips us with tools that make the Sugeno integral a feasible option in robust data regression and analysis. We provide experimental comparison with a genetic algorithms approach and an example in data analysis.}
+    abstract = {The Sugeno integral is an expressive aggregation function with
+        potential applications across a range of decision contexts.
+        Its calculation requires only the lattice minimum and maximum
+        operations, making it particularly suited to ordinal data and robust
+        to scale transformations. However, for practical use in data analysis
+        and prediction, we require efficient methods for learning the associated
+        fuzzy measure. While such methods are well developed for the Choquet
+        integral, the fitting problem is more difficult for the Sugeno integral
+        because it is not amenable to being expressed as a linear combination
+        of weights, and more generally due to plateaus and non-differentiability
+        in the objective function. Previous research has hence focused on
+        heuristic approaches or simplified fuzzy measures. Here we show
+        that the problem of fitting the Sugeno integral to data such that
+        the maximum absolute error is minimized can be solved using an
+        efficient bilevel program. This method can be incorporated into
+        algorithms that learn fuzzy measures with the aim of minimizing
+        the median residual. This equips us with tools that make the Sugeno
+        integral a feasible option in robust data regression and analysis.
+        We provide experimental comparison with a genetic algorithms approach
+        and an example in data analysis.}
 }
 
 @article{GerasETAL2020:dislike,
