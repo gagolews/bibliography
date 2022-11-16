@@ -1,30 +1,83 @@
 @misc{Gagolewski2022:clustering-data-v1.1.0,
-    author = {M. Gagolewski and others},
+    author = {Marek Gagolewski and others},
     title = {A benchmark suite for clustering algorithms: Version 1.1.0},
     year = {2022},
     url = {https://github.com/gagolews/clustering-data-v1/releases/tag/v1.1.0},
     doi = {10.5281/zenodo.7088171}
 }
 
-@misc{Gagolewski2022:clustering-benchmarks,
-    author = {M. Gagolewski},
-    title = {A framework for benchmarking clustering algorithms},
-    year = {2022},
-    publisher = {arXiv},
-    doi = {10.48550/arXiv.2209.09493},
-    preprint = {https://arxiv.org/pdf/2209.09493.pdf},
-    url = {https://clustering-benchmarks.gagolewski.com},
-    note = {under review (preprint)}
-}
-
 @misc{Gagolewski2022:aaa,
-    author = {M. Gagolewski},
+    author = {Marek Gagolewski},
     title = {Adjusted asymmetric accuracy: {A} well-behaving external cluster validity measure},
     year = {2022},
     publisher = {arXiv},
     doi = {10.48550/arXiv.2209.02935},
     preprint = {https://arxiv.org/pdf/2209.02935.pdf},
     note = {under review (preprint)}
+}
+
+@article{Gagolewski2022:clustering-benchmarks,
+    author = {Marek Gagolewski},
+    title = {A framework for benchmarking clustering algorithms},
+    journal = {SoftwareX},
+    year = {2022},
+    note = {in press},
+    url = {https://clustering-benchmarks.gagolewski.com},
+    abstract = {
+        The evaluation of clustering algorithms can involve running them
+        on a variety of benchmark problems, and comparing their outputs
+        to the reference, ground-truth groupings provided by experts.
+        Unfortunately, many research papers and graduate theses consider
+        only a small number of datasets. Also, the fact that there can be many
+        equally valid ways to cluster a given problem set is rarely taken into
+        account. In order to overcome these limitations, we have developed
+        a framework whose aim is to introduce a consistent methodology for
+        testing clustering algorithms. Furthermore, we have aggregated,
+        polished, and standardised many clustering benchmark dataset
+        collections referred to across the machine learning and data mining
+        literature, and included new datasets of different dimensionalities,
+        sizes, and cluster types. An interactive datasets explorer, the
+        documentation of the Python API, a description of the ways to
+        interact with the framework from other programming languages such
+        as R or MATLAB, and other details are all provided at
+        <https://clustering-benchmarks.gagolewski.com>.
+    },
+    keywords = {
+        clustering; machine learning; benchmark data; noise points;
+        external cluster validity; partition similarity score
+    },
+    preprint = {https://arxiv.org/pdf/2209.09493.pdf},
+}
+
+@article{ZogalaETAL2022:interpretable-citation-models,
+    author = {Barbara Żogała-Siudem and Anna Cena and Grzegorz Siudem
+        and Marek Gagolewski},
+    title = {Interpretable reparameterisations of citation models},
+    journal = {Journal of Informetrics},
+    year = {2022},
+    note = {in press},
+    abstract = {
+        This paper aims to find the reasons why some citation models can
+        predict a set of specific bibliometric indices extremely well.
+        We show why fitting a model that preserves the total sum of a vector
+        can be beneficial in the case of heavy-tailed data that are frequently
+        observed in informetrics and similar disciplines. Based on this
+        observation, we introduce the reparameterised versions of the discrete
+        generalised beta distribution (DGBD) and power law models that preserve
+        the total sum of elements in a citation vector and, as a byproduct,
+        they enjoy much better predictive power when predicting many
+        bibliometric indices as well as partial cumulative sums. This also
+        results in the underlying model parameters' being easier to fit
+        numerically. Moreover, they are also more interpretable. Namely,
+        just like in our recently-introduced 3DSI (three dimensions of
+        scientific impact) model, we have a clear distinction between the
+        coefficients determining the total productivity (size), total impact
+        (sum), and those that affect the shape of the resulting theoretical
+        curve.
+    },
+    keywords = {science of science; bibliometric indices; informetrics;
+        citation models; interpretability
+    }
 }
 
 @book{Gagolewski2021:lmlcr,
