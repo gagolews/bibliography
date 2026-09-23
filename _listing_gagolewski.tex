@@ -1,5 +1,5 @@
 % makeme:
-%     build: xelatex_biber
+%     build: xelatex_bibtex
 
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
@@ -11,16 +11,13 @@
 \usepackage{hyperref}
 \usepackage{amsmath,amssymb}
 \usepackage{doi}
-% \usepackage{natbib}
-\usepackage[backend=biber,style=ieee]{biblatex}
-\addbibresource{gagolewski.bib}
+\usepackage{natbib}
 
 \begin{document}
 \nocite{*}\noindent
 Last update: \today
 
-% \bibliographystyle{smj}
-% \bibliography{gagolewski}
-\printbibliography
+\bibliographystyle{smj}
+\bibliography{gagolewski}
 
 \end{document}
