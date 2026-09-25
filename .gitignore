@@ -1,3 +1,5 @@
+*.run.xml
+*.bcf
 .Rhistory
 .RData
 *.acn
