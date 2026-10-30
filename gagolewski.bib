@@ -8,14 +8,24 @@
     note = {under review (preprint)}
 }
 
-@misc{BrzozowskiETAL2023:geniegraphs,
+@article{BrzozowskiETAL2023:geniegraphs,
     author = {Łukasz Brzozowski and Grzegorz Siudem and Marek Gagolewski},
     title = {Community detection in complex networks via node similarity, graph representation learning, and hierarchical clustering},
-    year = {2023},
-    publisher = {arXiv},
-    doi = {10.48550/arXiv.2303.12212},
+    year = {2026},
+    journal = {Information Systems},
     preprint = {https://arxiv.org/pdf/2303.12212.pdf},
-    note = {under review (preprint)}
+    note = {in press},
+    doi = {10.1016/j.is.2026.102824},
+    abstract = {
+        Community detection is a significant challenge in analysing real graphs, including social, citation, biological, and many other networks. This article proposes three new, general, hierarchical frameworks to deal with this task. The introduced approach supports various linkage-based clustering algorithms, vertex proximity matrices, and graph representation learning models. We compare 364 module combinations on Stochastic Block Model graphs and real-life datasets. We observe that our best pipelines (Wasserman-Faust and the mutual information-based PPMI proximity, as well as the deep learning-based DNGR representations) perform competitively with the state-of-the-art Leiden and Louvain algorithms. At the same time, unlike the latter, they remain hierarchical. Thus, they output a series of nested partitions of all possible cardinalities which are compatible with each other. This feature is crucial when the number of correct partitions is unknown in advance, and we show that it is obtained at near-zero practical cost in terms of partition quality. On graphs composed of many small communities, our pipelines are more accurate than the reference solutions. Nevertheless, the downside of our approach is its time complexity, which confines the framework to networks of some 10000 vertices on personal machines.
+    },
+    keywords = {
+        community detection;
+        complex network analysis;
+        deep autoencoders;
+        representation learning;
+        hierarchical clustering
+    }
 }
 
 @article{BrzozowskiETAL2026:citation_seeder,
